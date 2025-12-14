@@ -20,24 +20,24 @@ Before opening the tool, here is the vocabulary I needed to learn:
 
 ---
 
-## 🚀 How I Use Maltego (My Workflow)
-I primarily use Maltego during the **OSINT (Passive Recon)** phase to visualize the attack surface.
+## 🚀 How Maltego works (the Workflow)
+Maltego is primarily used during the **OSINT (Passive Recon)** phase to visualize the attack surface.
 
 ### Step 1: Start with what you know
-I drag a **Domain** entity onto the graph and change the name to the target (e.g., `tesla.com`).
+ drag a **Domain** entity onto the graph and change the name to the target (e.g., `tesla.com`).
 
 ### Step 2: Map the Infrastructure (The "Machines")
 *   Right-click the Domain.
 *   Run Transform: **"To DNS Name [Robtex]"** or **"To IP Address."**
-*   *Result:* Now I see the mail servers, web servers, and the IP addresses they sit on.
+*   *Result:* Now you will see the mail servers, web servers, and the IP addresses they sit on.
 
 ### Step 3: Find the People (The "Humans")
-*   I click on the main Domain again.
+*   click on the main Domain again.
 *   Run Transform: **"To Email Addresses [Search Engine]."**
-*   *Result:* I now have a list of emails associated with that company.
+*   *Result:* now you have a list of emails associated with that company.
 
 ### Step 4: Connect the dots
-*   I pick a specific email address found in Step 3.
+*   pick a specific email address found in Step 3.
 *   Run Transform: **"To Social Networks."**
 *   *Result:* Maltego checks if that email is registered on Twitter, LinkedIn, etc.
 
