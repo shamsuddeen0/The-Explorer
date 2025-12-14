@@ -13,6 +13,8 @@ I ran a full port scan (`-p-`) with scripts and versions (`-sC -sV`). I used `-P
 nmap -Pn -p- -sC -sV -oA full_scan_goad 192.168.56.10-12,22-23
 
 ```
+
+```
 websploit# nmap -Pn -p- -sC -sV -oA full_scan_goad 192.168.56.10-12,22-23
 Nmap scan report for sevenkingdoms.local (192.168.56.10)
 Host is up (0.00066s latency).
