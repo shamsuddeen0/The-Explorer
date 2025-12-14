@@ -2,9 +2,9 @@
 
 **"Loud scanners get blocked. Quiet scanners get shells."**
 
-When I first started, I used to run `nmap -A -T4` on everything. In a real environment (Red Teaming) or a protected lab, this gets me banned in seconds.
+When I first started, I used to run `nmap -A -T4` on everything. In a real environment (Red Teaming) or a protected lab, this will get you banned in seconds.
 
-Here are the techniques I use when I need to be "Ninja Mode."
+Here are the techniques you can  use when you need to be "Ninja Mode."
 
 ---
 
