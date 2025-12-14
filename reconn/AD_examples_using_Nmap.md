@@ -112,11 +112,8 @@ Kerberos is extremely sensitive to time. If my attacker machine is more than 5 m
 Action Item: Run ntpdate 192.168.56.10 to sync my clock before attacking.
 
 ### 📂 Raw Scan Output
+
 ```
-<details>
-<summary>Click to expand full Nmap Log</summary>
-
-
 (websploit# nmap -Pn -p- -sC -sV -oA full_scan_goad 192.168.56.10-12,22-23
 Nmap scan report for sevenkingdoms.local (192.168.56.10)
 Host is up (0.00066s latency).
@@ -565,6 +562,5 @@ Service detection performed. Please report any incorrect results at https://nmap
 Nmap done: 5 IP addresses (5 hosts up) scanned in 572.00 seconds
 ```)
 
-</details>
 ```
 
