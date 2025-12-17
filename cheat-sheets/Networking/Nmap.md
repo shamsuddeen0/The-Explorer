@@ -8,16 +8,16 @@ Nmap (Network Mapper) is essential for penetration testing, network inventory, a
 ---
 
 ## 📋 Table of Contents
-- [Basic Syntax](#🛠️ Basic Syntax)
-- [Target Specification](#🎯 Target Specification)
-- [Port Specification](#🔢 Port Specification)
-- [Scan Types (TCP/UDP)](#📡 Scan Types)
-- [Host Discovery (Ping Sweeps)](#🔎 Host Discovery (Ping))
-- [Timing & Performance](#⏱️ Timing & Performance)
-- [Evasion (Stealth Mode)](#🥷 Evasion Techniquess)
-- [NSE (Scripting Engine)](#📜 Nmap Scripting Engine (NSE))
-- [Output Formats](# 💾 Output Options)
-- [Legal Notice ](#⚠️ Legal Notice)
+- [Basic Syntax](#🛠️-Basic-Syntax)
+- [Target Specification](#🎯-Target-Specification)
+- [Port Specification](#🔢-Port-Specification)
+- [Scan Types (TCP/UDP)](#📡-Scan-Types)
+- [Host Discovery (Ping Sweeps)](#🔎-Host-Discovery-(Ping))
+- [Timing & Performance](#⏱️-Timing-&-Performance)
+- [Evasion (Stealth Mode)](#🥷-Evasion-Techniquess)
+- [NSE (Scripting Engine)](#📜-Nmap-Scripting-Engine-(NSE))
+- [Output Formats](#-💾-Output-Options)
+- [Legal Notice ](#⚠️-Legal-Notice)
 
 ---
 
