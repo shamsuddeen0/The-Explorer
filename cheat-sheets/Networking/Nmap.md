@@ -160,7 +160,7 @@ nmap --script vuln 192.168.1.1
 
 # Run a specific category
 nmap --script "safe" 192.168.1.1
-```
+```bash
 Useful Scripts
 Script Name	Function
 http-title	Grabs the HTML title of the webpage.
@@ -172,7 +172,7 @@ ftp-anon	Checks for Anonymous FTP login.
 vuln	Runs a suite of vulnerability checks.
 ```
 ### 💾 Output Options
-```
+```bash
 Always save your scans!
 
 Option	Format	Description
