@@ -170,9 +170,9 @@ smb-os-discovery	Finds Windows OS version via SMB.
 dns-zone-transfer	Attempts to dump DNS records.
 ftp-anon	Checks for Anonymous FTP login.
 vuln	Runs a suite of vulnerability checks.
-
+```
 ### 💾 Output Options
-
+```
 Always save your scans!
 
 Option	Format	Description
@@ -181,6 +181,7 @@ Option	Format	Description
 -oG <file>	Grepable	Easy to search with grep.
 -oA <name>	All	Best Practice. Saves all 3 formats at once.
 ⚡ Practical Examples (My Workflow)
+```
 ### 1. The "Quick Sweep" (Network Discovery)
 
 Find all live hosts on the subnet.
