@@ -160,6 +160,7 @@ nmap --script vuln 192.168.1.1
 
 # Run a specific category
 nmap --script "safe" 192.168.1.1
+
 ```bash
 Useful Scripts
 Script Name	Function
@@ -170,6 +171,7 @@ smb-os-discovery	Finds Windows OS version via SMB.
 dns-zone-transfer	Attempts to dump DNS records.
 ftp-anon	Checks for Anonymous FTP login.
 vuln	Runs a suite of vulnerability checks.
+
 ```
 ### 💾 Output Options
 ```bash
