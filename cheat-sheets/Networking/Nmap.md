@@ -28,7 +28,7 @@ nmap [ScanType] [Options] {targets}
 
 If no port range is specified, Nmap scans the 1,000 most popular ports.
 
-🎯 Target Specification
+### 🎯 Target Specification
 
 How to tell Nmap what to scan.
 
@@ -53,7 +53,7 @@ nmap 192.168.1.0/24 --exclude 192.168.1.1
 nmap 192.168.1.0/24 --excludefile exclude.txt
 ```
 ### 🔢 Port Specification
-
+```
 Don't scan everything if you don't have to.
 
 Option	Description	Example
@@ -64,8 +64,9 @@ Option	Description	Example
 -F	Fast scan (Top 100 ports)	nmap -F 192.168.1.1
 --top-ports <n>	Scan n most popular ports	nmap --top-ports 20 192.168.1.1
 -r	Scan ports linearly (Random is default)	nmap -r 192.168.1.1
+```
 ### 📡 Scan Types
-
+```
 How Nmap talks to the target.
 
 Option	Scan Type	Description	Root Required?
@@ -82,10 +83,11 @@ Option	Type	Use Case
 -sF	FIN Scan	Only FIN flag set (Evasion).
 -sX	Xmas Scan	FIN, PSH, and URG flags (Lit up like a tree).
 -sI	Idle Scan	Uses a "Zombie" host to scan for you (Ultra Stealth).
+```
 ### 🔎 Host Discovery (Ping)
 
 Finding live hosts before scanning ports.
-
+```
 Option	Description
 -sn	Ping Scan. Disables port scan. Just finds live IPs.
 -Pn	Treat all hosts as online. Skips discovery. (Crucial for firewalls).
@@ -94,10 +96,11 @@ Option	Description
 -PU <ports>	UDP Ping.
 -PR	ARP Ping (Fastest for local network).
 --traceroute	Trace path to host.
-⏱️ Timing & Performance
+```
+### ⏱️ Timing & Performance
 
 Speed vs. Stealth.
-
+```
 Template	Name	Speed	Use Case
 -T0	Paranoid	5 min/probe	IDS Evasion (Painfully slow)
 -T1	Sneaky	15 sec/probe	IDS Evasion
@@ -106,6 +109,7 @@ Template	Name	Speed	Use Case
 -T4	Aggressive	Fast	My Default. Good for CTFs/Labs.
 -T5	Insane	Very Fast	Can miss ports / crash targets.
 Fine-Tuning
+```
 ```bash
 # Scan really fast
 nmap --min-rate 1000 --max-retries 2 192.168.1.1
@@ -166,6 +170,7 @@ smb-os-discovery	Finds Windows OS version via SMB.
 dns-zone-transfer	Attempts to dump DNS records.
 ftp-anon	Checks for Anonymous FTP login.
 vuln	Runs a suite of vulnerability checks.
+
 ### 💾 Output Options
 
 Always save your scans!
@@ -176,27 +181,27 @@ Option	Format	Description
 -oG <file>	Grepable	Easy to search with grep.
 -oA <name>	All	Best Practice. Saves all 3 formats at once.
 ⚡ Practical Examples (My Workflow)
-1. The "Quick Sweep" (Network Discovery)
+### 1. The "Quick Sweep" (Network Discovery)
 
 Find all live hosts on the subnet.
 
 ```bash
 nmap -sn 192.168.1.0/24 -oG live_hosts.txt
 ```
-2. The "CTF Start" (Fast & Loud)
+### 2. The "CTF Start" (Fast & Loud)
 
 Scan all ports, identify versions, run scripts, save output.
 
 ```bash
 nmap -p- -sC -sV -T4 -oA initial_scan 10.10.10.10
 ```
-3. The "Stealthy Approach" (Red Team)
+### 3. The "Stealthy Approach" (Red Team)
 
 Syn scan, limited ports, slow timing, decoys.
-``bash
+```bash
 sudo nmap -sS -p 80,443,22 -T2 -D RND:5 --randomize-hosts 192.168.1.0/24
 ```
-4. Vulnerability Hunting
+### 4. Vulnerability Hunting
 
 Target specific services (e.g., SMB) for known bugs.
 
