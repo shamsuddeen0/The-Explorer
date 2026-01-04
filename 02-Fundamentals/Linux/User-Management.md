@@ -39,7 +39,7 @@ id
 
 Hacker Tip: Look for special groups like `docker`, `lxd`, or `sudo`. These are paths to root!
 
-# `w` or # `who`
+# `w` or  `who`
 
 Shows who else is logged into the system right now.
 ```bash
