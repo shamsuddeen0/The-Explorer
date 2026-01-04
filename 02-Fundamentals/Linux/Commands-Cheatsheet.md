@@ -65,7 +65,7 @@ tail -f /var/log/syslog # Watch a log file update in real-time.
 `cat`/`less`/`head`/`tail`
 
 ### Reading files.
-
+```
 cat file.txt: `Dump entire file.`
 
 less file.txt: `Scroll through file (press q to quit).`
@@ -73,12 +73,10 @@ less file.txt: `Scroll through file (press q to quit).`
 head -n 5 file.txt: `Show first 5 lines.`
 
 tail -f /var/log/syslog: `Watch a log file update in real-time.`
-
+```
 ### `sort & uniq`
 
 Organizing lists.
-```
-
 ```bash 
 # Sort a list alphabetically and remove duplicates
 sort subs.txt | uniq > clean_subs.txt
