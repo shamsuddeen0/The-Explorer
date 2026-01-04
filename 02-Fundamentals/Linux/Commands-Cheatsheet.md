@@ -99,12 +99,12 @@ cat file.txt | awk '{print $4}'
 ### 🌐 Networking from Terminal
 ``
 Command	Usage
-### `ip a`	Show IP
-### `ping -c 4 <IP>`	Connectivity
-### `netstat -antp`	Connections
-### `ss -lntp`	Sockets
-### `curl -I <URL>`	Headers
-### `wget <URL>`	Download
+ `ip a`	Show IP
+ `ping -c 4 <IP>`	Connectivity
+ `netstat -antp`	Connections
+ `ss -lntp`	Sockets
+ `curl -I <URL>`	Headers
+`wget <URL>`	Download
 ``
 ### 📦 System Info (Recon)
 ```
