@@ -12,9 +12,7 @@ When you run `ls -l`, you see something like this:
 ```bash 
 -rwxr-xr--  1  root  staff  4096  Jan 1  12:00  script.sh
 
-
-``` `
-# `Breaking it down`:
+# Breaking it down:
 
 1. Type (`-`):
 
@@ -35,10 +33,9 @@ Broken into 3 sets of 3: `Owner` | `Group` | `World (Everyone)`
 3. Owner (`root`): The user who owns the file.
 
 4. Group (`staff`): The group that owns the file.
-```  `
+```  
 
 ####  🧮 The "Chmod" Math (Octal Notation)
-``
 Permissions are often represented by numbers.
 
 Value	Letter	Meaning
@@ -55,7 +52,7 @@ Common Examples:
 `chmod 600`: Owner (6), Group (0), World (0). Standard for SSH keys (Read/Write for owner ONLY).
 
 `chmod +x`: Adds "Execute" permission for everyone.
-``` `
+
 ### 👮 Changing Ownership (chown)
 ``
 Only the root user can give away ownership of a file.
@@ -71,10 +68,10 @@ sudo chown kali:kali exploit.py
 `chown -R: Recursive`. Changes ownership for a folder and everything inside it.
 ``` `
 ### ☣️ Special Permissions (The Dangerous Ones)
-``` `
+
 These are critical for Privilege Escalation.
 
-1. SUID (Set User ID)
+1. SUID (Set User ID):
 
 Symbol: `s` in the owner section (e.g., `-rwsr-xr-x`).
 
