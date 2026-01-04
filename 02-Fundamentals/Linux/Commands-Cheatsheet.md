@@ -56,7 +56,7 @@ updatedb  # Update the database first!
 locate exploit.py
 ```
 ### 📝 Text Manipulation (The "Awk/Sed" Magic)
-
+```
 Essential for cleaning up wordlists or Nmap output.
 
 cat / less / head / tail
@@ -74,6 +74,7 @@ tail -f /var/log/syslog: Watch a log file update in real-time.
 sort & uniq
 
 Organizing lists.
+```
 
 ```bash 
 # Sort a list alphabetically and remove duplicates
@@ -96,6 +97,7 @@ The advanced text processor.
 cat file.txt | awk '{print $4}'
 ```
 ### 🌐 Networking from Terminal
+``
 Command	Usage
 ip a	Show IP
 ping -c 4 <IP>	Connectivity
@@ -103,8 +105,9 @@ netstat -antp	Connections
 ss -lntp	Sockets
 curl -I <URL>	Headers
 wget <URL>	Download
+``
 ### 📦 System Info (Recon)
-
+```
 uname -a: Kernel version (Critical for finding kernel exploits).
 
 whoami: Current user.
@@ -116,9 +119,9 @@ ps aux: List all running processes (Is there an antivirus running?).
 env: Show environment variables (Look for secrets/keys).
 
 history: Show previous commands typed by the user (Often contains passwords!).
-
+```
 ### 🗜️ Archiving & Compression
-
+```
 Exfiltrating data.
 
 Zip: zip -r data.zip folder/
@@ -128,3 +131,4 @@ Unzip: unzip data.zip
 Tar (Compress): tar -czvf backup.tar.gz folder/
 
 Tar (Extract): tar -xzvf backup.tar.gz
+```
