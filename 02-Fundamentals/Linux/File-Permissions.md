@@ -11,7 +11,7 @@ One of the most common ways to hack a Linux machine (Privilege Escalation) is by
 When you run `ls -l`, you see something like this:
 ```bash 
 -rwxr-xr--  1  root  staff  4096  Jan 1  12:00  script.sh
-```
+
 
 ``` `
 # `Breaking it down`:
