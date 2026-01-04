@@ -9,10 +9,11 @@ One of the most common ways to hack a Linux machine (Privilege Escalation) is by
 
 ## 📜 Reading Permissions (`ls -l`)
 When you run `ls -l`, you see something like this:
+```bash 
 -rwxr-xr--  1  root  staff  4096  Jan 1  12:00  script.sh
+```
 
-```
-```
+``` ```
 `Breaking it down`:
 
 Type (`-`):
@@ -34,8 +35,8 @@ Broken into 3 sets of 3: `Owner` | `Group` | `World (Everyone)`
 Owner (`root`): The user who owns the file.
 
 Group (`staff`): The group that owns the file.
-```
-```
+``` ```
+
 
 ### 🧮 The "Chmod" Math (Octal Notation)
 
