@@ -56,4 +56,4 @@ nmap --script vuln <IP>
 nmap -p 445 --script smb-vuln* <IP>
 ```
 ## FOR MORE ADVANCE Nmap cheat-sheets go to : 
-- [Nmap - Network Scanning](.main/cheat-sheets/Networking/Nmap.md)
+- [Nmap - Network Scanning](https://github.com/shamsuddeen0/The-Explorer/blob/main/cheat-sheets/Networking/Nmap.md)
