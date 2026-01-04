@@ -1,3 +1,20 @@
+# Zip
+zip -r data.zip folder/
+
+# Unzip
+unzip data.zip
+
+# Tar (Compress)
+tar -czvf backup.tar.gz folder/
+
+# Tar (Extract)
+tar -xzvf backup.tar.gz
+uname -a    # Kernel version (Critical for finding kernel exploits).
+whoami      # Current user.
+id          # Current group privileges.
+ps aux      # List all running processes (Is there an antivirus running?).
+env         # Show environment variables (Look for secrets/keys).
+history     # Show previous commands typed by the user (Often contains passwords!).
 
 Here is the Commands-Cheatsheet.md. This isn't just ls and cd. This is a collection of the commands you actually use during a CTF or Pentest to find files, manipulate text, and move data.
 
@@ -57,7 +74,10 @@ locate exploit.py
 ```
 ### 📝 Text Manipulation (The "Awk/Sed" Magic)
 ```
-Essential for cleaning up wordlists or Nmap output.
+cat file.txt           # Dump entire file.
+less file.txt          # Scroll through file (press q to quit).
+head -n 5 file.txt     # Show first 5 lines.
+tail -f /var/log/syslog # Watch a log file update in real-time.
 ```
 `cat`/`less`/`head`/`tail`
 
@@ -85,7 +105,7 @@ sort subs.txt | uniq > clean_subs.txt
 Extracting specific columns.
 
 ```bash 
-# Extract userames (column 1) from /etc/passwd
+# Extract usernames (column 1) from /etc/passwd
 cat /etc/passwd | cut -d ":" -f 1
 ```
 ### `awk`
@@ -97,15 +117,15 @@ The advanced text processor.
 cat file.txt | awk '{print $4}'
 ```
 ### 🌐 Networking from Terminal
-``
-Command	Usage
- `ip a`	Show IP
- `ping -c 4 <IP>`	Connectivity
- `netstat -antp`	Connections
- `ss -lntp`	Sockets
- `curl -I <URL>`	Headers
-`wget <URL>`	Download
-``
+
+| Command | Usage |
+| :--- | :--- |
+| `ip a` | Show IP |
+| `ping -c 4 <IP>` | Connectivity |
+| `netstat -antp` | Connections |
+| `ss -lntp` | Sockets |
+| `curl -I <URL>` | Headers |
+| `wget <URL>` | Download |
 ### 📦 System Info (Recon)
 ```bash 
 ```
