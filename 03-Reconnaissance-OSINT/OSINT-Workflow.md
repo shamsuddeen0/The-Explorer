@@ -2,7 +2,7 @@
 
 **"How to find the needle in the haystack."**
 
-This is the exact process I follow when I am given a domain name (e.g., `tesla.com`) and told to find vulnerabilities.
+This is the exact process you should follow when you are given a domain name (e.g., `tesla.com`) and told to find vulnerabilities.
 
 ---
 
