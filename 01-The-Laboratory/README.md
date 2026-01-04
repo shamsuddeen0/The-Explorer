@@ -12,7 +12,7 @@ This directory documents the infrastructure I use to learn. You cannot become a 
 2.  **[Active-Directory-Setup.md](Active-Directory-Setup.md)** *(Coming Soon)*
     *   How to deploy GOAD (Game of Active Directory) to practice enterprise network attacks.
 
-3.  **[Cloud-Lab-Setup.md](Cloud-Lab-Setup.md)** *(Coming Soon)*
+3.  **[Cloud-Lab-Setup.md](Cloud-Lab-Setup.md)** 
     *   Using Terraform to spin up vulnerable AWS/Azure instances for cloud pentesting.
 
 ---
