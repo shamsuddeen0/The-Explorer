@@ -27,7 +27,8 @@ Fuzzing (or brute-forcing) is the act of sending thousands of requests to a web 
 Finding folders like `/admin`, `/login`, `/dev`.
 ```bash
 ffuf -u http://target.com/FUZZ -w /usr/share/wordlists/seclists/Discovery/Web-Content/directory-list-2.3-medium.txt
-2. Extension Hunting (Finding Files)
+```
+### 2. Extension Hunting (Finding Files)
 
 Finding specific files like index.php, config.yaml, backup.zip.
 
@@ -35,7 +36,7 @@ Finding specific files like index.php, config.yaml, backup.zip.
 # -e specifies extensions
 ffuf -u http://target.com/FUZZ -w common.txt -e .php,.html,.txt,.bak,.zip
 ```
-3. VHost / Subdomain Discovery
+### 3. VHost / Subdomain Discovery
 
 Sometimes a "subdomain" is just a virtual host configuration on the same IP. We fuzzy the Host Header.
 
@@ -43,7 +44,7 @@ Sometimes a "subdomain" is just a virtual host configuration on the same IP. We 
 # We scan the IP, but we change the Host Header
 ffuf -u http://10.10.10.10 -w subdomains.txt -H "Host: FUZZ.target.com"
 ```
-4. Parameter Fuzzing (Hidden Inputs)
+### 4. Parameter Fuzzing (Hidden Inputs)
 
 The page exists, but maybe it behaves differently if I send a specific parameter?
 
