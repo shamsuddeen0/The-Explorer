@@ -34,7 +34,7 @@ This document tracks my journey from "I don't know what I'm doing" to "Professio
 ---
 
 ## 🐍 Phase 2: The Toolsmith (Scripting)
-*Goal: Stop relying on other people's tools and start writing my own.*
+*Goal: Stop relying on other people's tools and start writing your own.*
 
 - [ ] **Bash Scripting**
     - [ ] Automating Nmap scans
@@ -105,6 +105,6 @@ This document tracks my journey from "I don't know what I'm doing" to "Professio
 ---
 
 ## 📝 Learning Philosophy
-1.  **Document Everything:** If I didn't write it down, I didn't learn it.
+1.  **Document Everything:** If you didn't write it down, you didn't learn it.
 2.  **Labs > Theory:** Reading is good, but doing is better. Break the VMs.
 3.  **Consistency:** 1 hour a day is better than 10 hours on Sunday.
