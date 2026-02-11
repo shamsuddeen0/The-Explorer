@@ -69,5 +69,4 @@ This document outlines the hardware, software, and network configurations I use 
 ---
 
 ## 📚 Reference Guides
-*   [Building the Ultimate Cybersecurity Lab (O'Reilly)](https://learning.oreilly.com/course/building-the-ultimate/9780138319090/)
-*   [Home Lab Resources GitHub](https://github.com/reswob10/HomeLabResources)
+coming soon!!!
