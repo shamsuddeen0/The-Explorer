@@ -54,7 +54,7 @@ This is my standard workflow when approaching a new target (CTF Box or Real Asse
 
 - [ ] **Searchsploit:** Search for the version numbers found in Step 2.
     - `searchsploit apache 2.4.49`
-- [ ] **Metasploit:** Is there a module for it?
+- [ ] **Metasploit:** we will talk about it later 
 - [ ] **Default Creds:** Try `admin:admin`, `root:root`, `admin:password`.
 - [ ] **Web Exploits:**
     - [ ] SQL Injection (Login forms, URL parameters).
